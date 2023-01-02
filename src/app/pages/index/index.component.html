@@ -1,0 +1,591 @@
+<nav
+  class="navbar navbar-expand-lg fixed-top navbar-transparent"
+  color-on-scroll="100"
+  id="navbar-top"
+>
+  <div class="container">
+    <div class="navbar-translate">
+      <a class="navbar-brand" href="index.html">
+        <img src="assets/img/logo/white-logo.svg" alt="Logo">
+      </a>
+      <button
+        aria-controls="navigation-index"
+        aria-label="Toggle navigation"
+        class="navbar-toggler navbar-toggler"
+        [attr.aria-expanded]="!isCollapsed"
+        (click)="isCollapsed = !isCollapsed"
+        id="navigation"
+        type="button"
+      >
+        <span class="navbar-toggler-bar bar1"> </span>
+        <span class="navbar-toggler-bar bar2"> </span>
+        <span class="navbar-toggler-bar bar3"> </span>
+      </button>
+    </div>
+    <div
+      class="navbar-collapse justify-content-end"
+      [collapse]="isCollapsed"
+      id="navigation"
+    >
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand"><a> <img src="assets/img/logo/white-logo.svg" alt="Logo"> </a></div>
+          <div class="col-6 collapse-close text-right">
+            <button
+              aria-controls="navigation-index"
+              aria-label="Toggle navigation"
+              class="navbar-toggler"
+              [attr.aria-expanded]="!isCollapsed"
+              (click)="isCollapsed = !isCollapsed"
+              id="navigation"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav">
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href=""
+            placement="bottom"
+            target="_blank"
+          >
+            <p>Home</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href=""
+            placement="bottom"
+            target="_blank"
+          >
+            <p>Virtual Tour</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href=""
+            placement="bottom"
+            target="_blank"
+          >
+            <p>Products</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href=""
+            placement="bottom"
+            target="_blank"
+          >
+            <p>Promo</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href=""
+            placement="bottom"
+            target="_blank"
+          >
+            <p>Bank List</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            href=""
+            placement="bottom"
+            target="_blank"
+          >
+            <p>FAQ</p>
+          </a>
+        </li>
+        <!-- <li class="dropdown nav-item" dropdown>
+          <a
+            class="dropdown-toggle nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            dropdownToggle
+            href="javascript:void(0)"
+          >
+            <i class="fa fa-cogs d-lg-none d-xl-none"> </i> Getting started
+          </a>
+          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+            <a
+              class="dropdown-item"
+              href="https://demos.creative-tim.com/APS-design-system-angular/#/documentation/overview"
+            >
+              <i class="tim-icons icon-paper"> </i> Documentation
+            </a>
+            <a class="dropdown-item" [routerLink]="['/register']">
+              <i class="tim-icons icon-bullet-list-67"> </i> Register Page
+            </a>
+            <a class="dropdown-item" [routerLink]="['/landing']">
+              <i class="tim-icons icon-image-02"> </i> Landing Page
+            </a>
+            <a class="dropdown-item" [routerLink]="['/profile']">
+              <i class="tim-icons icon-single-02"> </i> Profile Page
+            </a>
+          </div>
+        </li> -->
+        <li class="nav-item">
+          <a
+            class="nav-link btn btn-default d-none d-lg-block"
+            href="javascript:void(0)"
+            (click)="scrollToDownload(target)"
+          >
+            <i class="tim-icons icon-cloud-download-93"> </i> Download
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="wrapper">
+  <div class="page-header header-filter">
+    <div class="squares square1"></div>
+    <div class="squares square2"></div>
+    <div class="squares square3"></div>
+    <div class="squares square4"></div>
+    <div class="squares square5"></div>
+    <div class="squares square6"></div>
+    <div class="squares square7"></div>
+    <div class="container">
+      <div class="content-center text-left">
+        <h1 class="h3-seo ">World-Class Property at Hand.</h1>
+        <h3 class="h3-seo">
+          Real estate is not just a transaction, it's a life-changing experience. Let us guide you home.
+        </h3>
+
+        <button class="btn btn-primary btn-round" type="button">
+          Login as Agent <i class="tim-icons icon-minimal-right"></i> 
+        </button>
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="main">
+    <section class="section section-lg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <h4 class="text-center">Virtual Tours</h4>
+            <h1 class="text-center">Experience reality through virtual tours</h1>
+            <div class="row row-grid justify-content-center">
+              <carousel [showIndicators]="false">
+                <slide>
+                  <div 
+                  alt="First slide" class="card" style="width: 18rem;">
+                    <img src="assets/img/asya.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Asya Kelimutu</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </slide>
+                <slide>
+                  <div 
+                  alt="Second slide" class="card" style="width: 18rem;">
+                    <img src="assets/img/asya.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Asya Maninjau</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </slide>
+                <slide>
+                  <div 
+                  alt="Third slide" class="card" style="width: 18rem;">
+                    <img src="assets/img/asya.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Asya Toba Lake</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                  </div>
+                </slide>
+              </carousel>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="section section-lg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <h4 class="text-center">PRODUCT</h4>
+            <h1 class="text-center">Discover product that suits to you</h1>
+            <div class="row row-grid justify-content-center">
+              <div class="col-md-10 ml-auto col-xl-6 mr-auto">
+                <div class="card">
+                  <div class="card-header">
+                    <tabset class="nav-tabs-danger">
+                      <tab>
+                        <ng-template tabHeading>
+                          <i class="tim-icons icon-spaceship"> </i> Compare Product
+                        </ng-template>
+
+                        <div class="row justify-content-center">
+                          <div class="col-md-12 justify-content-center">
+                            <button class="btn btn-primary btn-sm mr-1">ASYA</button>
+                            <button class="btn btn-primary btn-sm mr-1">ARUMAYA</button>
+                            <button class="btn btn-primary btn-sm mr-1">LAZULI</button>
+                            <button class="btn btn-primary btn-sm mr-1">ASYA</button>
+                          </div>
+                        </div>
+                        <div class="row justify-content-center">
+
+                          <div class="col-md-6 ">
+                            <button
+                              class="btn btn-success"
+                              data-target="#myModal2"
+                              (click)="myModal2.show()"
+                            >
+                              Kelimutu
+                            </button>
+                          </div>
+                          <div class="col-md-6 ">
+                            <button
+                              class="btn btn-success"
+                              data-target="#myModal2"
+                              (click)="myModal2.show()"
+                            >
+                              Kelimutu
+                            </button>
+                          </div>
+                          
+
+                        </div>
+                        
+                        <div class="row row-grid justify-content-center">
+                          <carousel [showIndicators]="false">
+                            <slide>
+                              <div 
+                              alt="First slide" class="card" style="width: 18rem;">
+                                <img src="assets/img/asya.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Asya Kelimutu</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                            </slide>
+                            <slide>
+                              <div 
+                              alt="Second slide" class="card" style="width: 18rem;">
+                                <img src="assets/img/asya.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Asya Maninjau</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                            </slide>
+                            <slide>
+                              <div 
+                              alt="Third slide" class="card" style="width: 18rem;">
+                                <img src="assets/img/asya.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Asya Toba Lake</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                            </slide>
+                          </carousel>
+                        </div>
+                      </tab>
+
+                      
+                      <tab>
+                        <ng-template tabHeading>
+                          <i class="tim-icons icon-settings-gear-63"> </i> Check Stock
+                        </ng-template>
+                        <p>
+                          Completely synergize resource taxing relationships via
+                          premier niche markets. Professionally cultivate one-to-one
+                          customer service with robust ideas. <br />
+    
+                          <br />
+    
+                          Dynamically innovate resource-leveling customer service
+                          for state of the art customer service.
+                        </p>
+                      </tab>
+                      
+                    </tabset>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- virtual tour area starts -->
+    <div class="section section-basic"></div>
+
+    <!-- virtual tour area ends -->
+
+
+
+
+    
+    
+   
+    
+    
+    <div class="section section-javascript" id="javascriptComponents">
+      <img class="path" src="assets/img/path5.png" />
+
+      <img class="path path1" src="assets/img/path5.png" />
+
+      
+      <div class="section">
+        <div class="container">
+          <div class="title"><h3>Carousel</h3></div>
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-5 mb-5 mb-lg-0">
+              <h1 class="text-white font-weight-light">Bootstrap carousel</h1>
+              <p class="text-white mt-4">
+                Black Design comes with three pre-built pages to help you get
+                started faster. You can change the text and images and you're
+                good to go.
+              </p>
+              <a
+                class="btn btn-warning mt-4"
+                href="https://demos.creative-tim.com/APS-design-system-angular/#/documentation/alerts"
+              >
+                See all components
+              </a>
+            </div>
+            <div class="col-lg-6">
+              <carousel [showIndicators]="false">
+                <slide>
+                  <img
+                    alt="First slide"
+                    class="d-block w-100"
+                    src="assets/img/denys.jpg"
+                  />
+                </slide>
+                <slide>
+                  <img
+                    alt="Second slide"
+                    class="d-block w-100"
+                    src="assets/img/fabien-bazanegue.jpg"
+                  />
+                </slide>
+                <slide>
+                  <img
+                    alt="Third slide"
+                    class="d-block w-100"
+                    src="assets/img/mark-finn.jpg"
+                  />
+                </slide>
+              </carousel>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section section-nucleo-icons">
+      <img class="path" src="assets/img/path3.png" />
+
+      
+    </div>
+    
+    
+    
+    <div
+      aria-hidden="true"
+      aria-labelledby="myModalLabel"
+      bsModal
+      class="modal fade"
+      #myModal="bs-modal"
+      id="myModal"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button
+              aria-hidden="true"
+              class="close"
+              data-dismiss="modal"
+              type="button"
+              (click)="myModal.hide()"
+            >
+              <i class="tim-icons icon-simple-remove"> </i>
+            </button>
+            <h4 class="title title-up">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <p>
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia, there live the blind texts. Separated
+              they live in Bookmarksgrove right at the coast of the Semantics, a
+              large language ocean. A small river named Duden flows by their
+              place and supplies it with the necessary regelialia. It is a
+              paradisematic country, in which roasted parts of sentences fly
+              into your mouth.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" type="button">Nice Button</button>
+            <button
+              class="btn btn-danger"
+              data-dismiss="modal"
+              type="button"
+              (click)="myModal.hide()"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="myModalLabel"
+      bsModal
+      class="modal fade modal-mini modal-danger modal-mini"
+      #myModal1="bs-modal"
+      id="myModal1"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button
+              aria-hidden="true"
+              class="close"
+              data-dismiss="modal"
+              (click)="myModal1.hide()"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove text-white"> </i>
+            </button>
+            <div class="modal-profile">
+              <i class="tim-icons icon-single-02"> </i>
+            </div>
+          </div>
+          <div class="modal-body">
+            <p>Always have an access to your profile</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-link btn-neutral" type="button">Back</button>
+            <button
+              class="btn btn-link btn-neutral"
+              data-dismiss="modal"
+              type="button"
+              (click)="myModal1.hide()"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      aria-hidden="true"
+      aria-labelledby="myModalLabel"
+      bsModal
+      class="modal fade modal-black"
+      #myModal2="bs-modal"
+      id="myModal2"
+      role="dialog"
+      tabindex="-1"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header justify-content-center">
+            <button
+              aria-hidden="true"
+              class="close"
+              data-dismiss="modal"
+              (click)="myModal2.hide()"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove text-white"> </i>
+            </button>
+            <div class="text-muted text-center ml-auto mr-auto">
+              <h3 class="mb-0">Product</h3>
+            </div>
+          </div>
+          <div class="modal-body">
+            <form role="form">
+              <div class="form-group mb-3">
+                <div
+                  class="input-group input-group-alternative"
+                  [ngClass]="{ 'input-group-focus': focus1 === true }"
+                >
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">
+                      <i class="tim-icons icon-zoom-split"> </i>
+                    </span>
+                  </div>
+                  <input
+                    class="form-control"
+                    placeholder="Search Product"
+                    type="text"
+                    (focus)="focus1 = true"
+                    (blur)="focus1 = false"
+                  />
+                </div>
+              </div>
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active">
+                  Asya
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">Sentarum</a>
+                <a href="#" class="list-group-item list-group-item-action">Toba Lake Villa</a>
+                <a href="#" class="list-group-item list-group-item-action">Matana</a>
+                <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Semayang</a>
+                <a href="#" class="list-group-item list-group-item-action">Maninjau</a>
+                <a href="#" class="list-group-item list-group-item-action" >Kelimutu</a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"><h1 class="title">APS•</h1></div>
+        <div class="col-md-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/home']"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/landing']"> Landing </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/register']"> Register </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="['/profile']"> Profile </a>
+            </li>
+          </ul>
+        </div>
+        
+        
+      </div>
+    </div>
+  </footer>
+</div>
